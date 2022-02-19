@@ -1,0 +1,90 @@
+* {
+  --backgroundColor: {{ initParams.backgroundColor }};
+}
+
+.root {
+  height: 100%;
+  background: var(--backgroundColor);
+}
+
+.intro {
+  height: 60%;
+  width: 20%;
+  perspective: 600px;
+  background: var(--backgroundColor);
+  position:absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.cube {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  transform-style: preserve-3d;
+  top: 100px;
+  left: 100px;
+}
+
+.cube-face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+
+.cube-face-front  { 
+
+  transform: rotateY(  0deg) translateZ(100px); 
+}
+.cube-face-right  { 
+  transform: rotateY( 90deg) translateZ(100px); 
+}
+.cube-face-back   {
+   transform: rotateY(180deg) translateZ(100px);
+ 
+  }
+.cube-face-left   { 
+  transform: rotateY(-90deg) translateZ(100px); 
+}
+.cube-face-top    { 
+  transform: rotateX( 90deg) translateZ(100px); 
+}
+.cube-face-bottom {
+   transform: rotateX(-90deg) translateZ(100px); 
+}
+.intro .text{
+  position: absolute;
+  color: white;
+  top:70%;
+  left:20%;
+  transform: translate(-30%,-80%) rotate(90deg);
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro .letter{
+  opacity: 0;
+  text-transform: uppercase;
+}
+
+.intro .text1{
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.intro .text2{
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
