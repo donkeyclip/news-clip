@@ -1,25 +1,143 @@
 <div class="root">
-  <div class="intro">
-    <div class="cube">
-      <div class="cube-face cube-face-front"></div>
-      <div class="cube-face cube-face-back"></div>
-      <div class="cube-face cube-face-right"></div>
-      <div class="cube-face cube-face-left"></div>
-      <div class="cube-face cube-face-top">
-        <div class="text">
-          <div class="text1">
-            <div class="letter" mc-for="key,item" mc-of="initParams.text1">
+  <div class="slide5">
+    <div class="location-wrapper">
+      <div class="location">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 30 30" version="1.1">
+          <g id="surface1">
+          <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 15 1.875 C 10.664062 1.875 7.136719 5.3125 7.136719 9.648438 C 7.136719 10.609375 7.34375 11.660156 7.710938 12.601562 L 7.707031 12.601562 L 7.742188 12.671875 C 7.769531 12.738281 7.800781 12.800781 7.828125 12.867188 L 15 28.125 L 22.136719 12.941406 L 22.171875 12.875 C 22.203125 12.808594 22.238281 12.742188 22.265625 12.671875 L 22.289062 12.609375 C 22.671875 11.664062 22.863281 10.671875 22.863281 9.660156 C 22.863281 5.3125 19.335938 1.875 15 1.875 Z M 15 12.125 C 13.484375 12.125 12.25 10.890625 12.25 9.375 C 12.25 7.859375 13.484375 6.625 15 6.625 C 16.515625 6.625 17.75 7.859375 17.75 9.375 C 17.75 10.890625 16.515625 12.125 15 12.125 Z M 15 12.125 "/>
+          </g>
+          </svg>
+        <div class="city">
+          {{initParams.slide5.location.city}} /</div>
+        <div class="country">{{initParams.slide5.location.country}}</div>
+      </div>
+      <div class="line1"></div>
+    </div>
+    <div class="content">
+      <div class="info">
+        <div class="title-wrapper">
+          <div class="background"></div>
+          <div class="title">{{initParams.slide5.title}}</div>
+        </div>
+        <div class="line2"></div>
+        <div class="text-wrapper">
+          <div class="text">{{initParams.slide5.text}}</div>
+        </div>
+        <div class="person-wrapper">
+          <div class="person"></div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <div class="image"></div>
+      </div>
+    </div>
+  </div>
+  <div class="slide4">
+    <div class="content">
+      <div class="person-info">
+        <div class="name">
+          <div class="firstname">
+            <div class="letter" mc-for="key,item" mc-of="initParams.slide4.name.firstname">
               {{item}}
             </div>
           </div>
-        <div class="text2">
-          <div class="letter" mc-for="key,item" mc-of="initParams.text2">
-            {{item}}
+          <div class="lastname">
+            <div class="letter" mc-for="key,item" mc-of="initParams.slide4.name.lastname">
+              {{item}}
+            </div>
+          </div>
+        </div>
+        <div class="subtitle-wrapper">
+          <div class="subtitle">{{initParams.slide4.subtitle}}</div>
+        </div>
+        <div class="line"></div>
+      </div>
+      <div class="text-wrapper">
+        <div class="background-back"></div>
+        <div class="background"></div>
+        <div class="text"> {{initParams.slide4.text}} <span class="text-bold">{{initParams.slide4.boldtext}}</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="slide3">
+    <div class="line"></div>
+    <div class="text">
+      <div class="background"></div>
+      <div class="word-wrapper" mc-for="key,item" mc-of="initParams.slide3.text">
+        <div class="word">{{item}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide2">
+    <div class="location-wrapper">
+      <div class="background"></div>
+      <div class="location">
+        <div class="city"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 30 30" version="1.1">
+          <g id="surface1">
+          <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 15 1.875 C 10.664062 1.875 7.136719 5.3125 7.136719 9.648438 C 7.136719 10.609375 7.34375 11.660156 7.710938 12.601562 L 7.707031 12.601562 L 7.742188 12.671875 C 7.769531 12.738281 7.800781 12.800781 7.828125 12.867188 L 15 28.125 L 22.136719 12.941406 L 22.171875 12.875 C 22.203125 12.808594 22.238281 12.742188 22.265625 12.671875 L 22.289062 12.609375 C 22.671875 11.664062 22.863281 10.671875 22.863281 9.660156 C 22.863281 5.3125 19.335938 1.875 15 1.875 Z M 15 12.125 C 13.484375 12.125 12.25 10.890625 12.25 9.375 C 12.25 7.859375 13.484375 6.625 15 6.625 C 16.515625 6.625 17.75 7.859375 17.75 9.375 C 17.75 10.890625 16.515625 12.125 15 12.125 Z M 15 12.125 "/>
+          </g>
+          </svg>
+          {{initParams.slide2.location.city}} /</div>
+        <div class="country">{{initParams.slide2.location.country}}</div>
+      </div>
+    </div>
+    <div class="line1">
+      <div class="line2"></div>
+    </div>
+    <div class="text-wrapper">
+      <div class="text">
+        <div>{{initParams.slide2.text.text1}}</div>
+        <div>{{initParams.slide2.text.text2}}</div>
+        <div>{{initParams.slide2.text.text3}}</div>
+        <div>{{initParams.slide2.text.text4}}</div>
+      </div>
+  </div>
+  </div>
+  <div class="slide1">
+    <div class="location-wrapper">
+      <div class="background"></div>
+      <div class="location">
+        <div class="city">{{initParams.slide1.location.city}} /</div>
+        <div class="country">{{initParams.slide1.location.country}}</div>
+      </div>
+    </div>
+    <div class="source-wrapper">
+      <div class="source">SOURCE: 
+        <div class="source-subtitle">{{initParams.slide1.source}}</div>
+      </div>
+    </div>
+    <div class="line1">
+      <div class="line2"></div>
+    </div>
+    <div class="text">
+      <div class="word-wrapper" mc-for="key,item" mc-of="initParams.slide1.text">
+        <div class="word">{{item}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="intro">
+    <div class="wrapper">
+      <div class="cube">
+        <div class="cube-face cube-face-front"></div>
+        <div class="cube-face cube-face-back"></div>
+        <div class="cube-face cube-face-right"></div>
+        <div class="cube-face cube-face-left"></div>
+        <div class="cube-face cube-face-top">
+          <div class="text">
+            <div class="text1">
+              <div class="letter" mc-for="key,item" mc-of="initParams.text1">
+                {{item}}
+              </div>
+            </div>
+          <div class="text2">
+            <div class="letter" mc-for="key,item" mc-of="initParams.text2">
+              {{item}}
+            </div>
           </div>
         </div>
       </div>
+      <div class="cube-face cube-face-bottom"></div>
     </div>
-    <div class="cube-face cube-face-bottom"></div>
   </div>
 </div>
 </div>

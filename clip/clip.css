@@ -1,5 +1,8 @@
 * {
   --backgroundColor: {{ initParams.backgroundColor }};
+  --basicColor: {{ initParams.basicColor}};
+  --secondaryColor:{{ initParams.secondaryColor}};
+  --tertiaryColor:{{initParams.tertiaryColor}};
 }
 
 .root {
@@ -7,7 +10,14 @@
   background: var(--backgroundColor);
 }
 
-.intro {
+.intro, .slide1,.slide2,.slide3,.slide4,.slide5{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--backgroundColor);
+}
+
+.wrapper {
   height: 60%;
   width: 20%;
   perspective: 600px;
@@ -32,7 +42,7 @@
   width: 200px;
   height: 200px;
   color: white;
-  background-color: black;
+  background-color: var(--basicColor);
   border: 2px solid white;
   box-sizing: border-box;
 }
@@ -57,9 +67,9 @@
 .cube-face-bottom {
    transform: rotateX(-90deg) translateZ(100px); 
 }
-.intro .text{
+.wrapper .text{
   position: absolute;
-  color: white;
+  color: var(--backgroundColor);
   top:70%;
   left:20%;
   transform: translate(-30%,-80%) rotate(90deg);
@@ -70,21 +80,389 @@
   flex-direction: column;
 }
 
-.intro .letter{
+.wrapper .letter{
   opacity: 0;
   text-transform: uppercase;
 }
 
-.intro .text1{
+.wrapper .text1{
   font-weight: 800;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
 
-.intro .text2{
+.wrapper .text2{
   font-weight: 300;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+.city{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.country{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.slide1 .location-wrapper, .slide2 .location-wrapper,.slide5 .location-wrapper{
+  position: absolute;
+  overflow: hidden;
+  right: 5%;
+  top:5%;
+}
+
+.slide1 .location-wrapper .background, .slide2 .location-wrapper .background{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: var(--secondaryColor);
+}
+
+.location{
+  display: flex;
+  flex-direction: row;
+  position:relative;
+  align-items: flex-start;
+  right:-100%;
+  margin: 10px;
+  color: var(--basicColor);
+}
+
+.location path{
+  fill: var(--basicColor);
+}
+
+.slide1 .source-wrapper{
+  position: absolute;
+  overflow: hidden;
+  top: 71%;
+  left: 10%;
+}
+
+.slide1 .source{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  right: -100%;
+  color: var(--backgroundColor);
+}
+
+.slide1 .source-subtitle{
+  font-weight: 800;
+}
+
+.slide1 .line1{
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  height: 1px;
+  top: 110%;
+  background: var(--secondaryColor);
+  opacity: 0;
+}
+
+.slide1 .line2{
+  position: absolute;
+  height: 110%;
+  width: 5%;
+  background: var(--backgroundColor);
+}
+
+.slide1 .text{
+  position: absolute;
+  text-transform: uppercase;
+  color: var(--backgroundColor);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 45px;
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 80%;
+  left: 10%;
+  top: 78%;
+}
+
+.slide3 .text{
+  position: relative;
+  overflow: hidden;
+  color: var(--backgroundColor);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 74px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 80%;
+  left: 10%;
+  top: 65%;
+}
+
+.word-wrapper{
+  position: relative;
+  overflow: hidden;
+}
+
+.slide1 .word,.slide3 .word{
+  position: relative;
+  top: 100px;
+}
+
+.slide2 .text-wrapper{
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  width: 650px;
+  overflow: hidden;
+  height:65px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.slide2 .text{
+  color: var(--backgroundColor);
+  position: relative;
+  height: 65px;
+  top: 180px;
+}
+
+.slide2 .line1{
+  position: absolute;
+  width: 3%;
+  left: 10%;
+  height: 12px;
+  bottom: 20%;
+  background: var(--backgroundColor);
+  opacity: 0;
+}
+
+.slide2 .line2{
+  position: absolute;
+  height: 110%;
+  width: 5%;
+  background: var(--secondaryColor);
+}
+
+.slide3 .line{
+  width: 0%;
+  height: 18px;
+  position: absolute;
+  left:2%;
+  top: 62%;
+  background: var(--backgroundColor);
+}
+
+.slide3 .background{
+  background: var(--tertiaryColor);
+  position: absolute;
+  top: -150%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.slide4 .background{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  background: var(--secondaryColor);
+}
+
+.slide4 .background-back{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: var(--backgroundColor);
+}
+
+.slide4 .text-wrapper{
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 2%;
+  width: 70%;
+  left: 15%;
+}
+
+.slide4 .text{
+  position: relative;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  left: 20%;
+  opacity: 0;
+}
+
+.slide4 .text-bold{
+  font-weight: 900;
+}
+
+.slide4 .line{
+  position: relative;
+  width:0%;
+  height: 8px;
+  background: var(--secondaryColor);
+}
+
+.slide4 .subtitle-wrapper{
+ position: relative;
+ overflow: hidden;
+ height: 50px;
+}
+
+.slide4 .subtitle{
+  position: relative;
+  top:100%;
+  letter-spacing: 2px;
+  color: var(--secondaryColor) ;
+  font-size: 37px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.slide4 .name{
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--secondaryColor) ;
+  font-size: 55px;
+  gap: 10px;
+}
+
+.slide4 .firstname, .slide4 .lastname{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.slide4 .person-info{
+  position: relative;
+  right: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap:20px;
+  align-self: flex-end;
+}
+
+.slide4 .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 4%;
+  position: absolute;
+  height: 80%;
+  top:10%;
+}
+
+.slide4 .letter{
+  opacity: 0;
+}
+
+.slide5 .location{
+  color: var(--backgroundColor);
+}
+
+.slide5 .location path{
+  fill: var(--secondaryColor);
+}
+
+.slide5 .location svg{
+  width: 0px;
+  height: 0px;
+}
+
+.slide5 .line1{
+  width: 0%;
+  height: 5px;
+  background-color: var(--secondaryColor);
+} 
+
+.slide5 .content{
+  position: absolute;
+  left: 10%;
+  bottom: 15%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.slide5 .info{
+  position: relative;
+  width: 63%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap:10px;
+}
+
+.slide5 .text{
+  position: relative;
+  text-transform: uppercase;
+  color: var(--backgroundColor);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  opacity: 0;
+}
+
+.slide5 .line2{
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: var(--secondaryColor);
+  bottom: -100%;
+  opacity: 0;
+}
+
+.slide5 .title-wrapper{
+  position: relative;
+  overflow: hidden;
+}
+
+.slide5 .title{
+  position:relative;
+  text-transform: uppercase;
+  color: var(--basicColor);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+  left: 100%;
+  opacity: 0;
+}
+
+.slide5 .background{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: var(--backgroundColor);
+}
+
+.slide5 .image-wrapper{
+  width: 255px;
+  height: 255px;
+  background: var(--secondaryColor);
+}
+
+.slide5 .image{
+  width: 253px;
+  height: 253px;
 }
