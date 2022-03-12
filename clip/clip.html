@@ -1,4 +1,203 @@
 <div class="root">
+  <div class="slide12">
+    <div class="location-wrapper">
+      <div class="location">
+        <div class="city">
+          {{initParams.slide12.location.city}} /</div>
+        <div class="country">{{initParams.slide12.location.country}}</div>
+      </div>
+      <div class="line"></div>
+    </div>
+    <div class="person">
+      <div class="img"></div>
+      <div class="name">{{initParams.slide12.name}}</div>
+    </div>
+    <div class="content">
+      <div>
+        <div class="title-wrapper">
+          <div class="title">
+            <div class="word" mc-for="key,item" mc-of="initParams.slide12.title">
+              <div class="letter" mc-for="key,letter" mc-of="item">
+                {{letter}}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-wrapper">
+          <div class="text">
+              <div>{{initParams.slide12.text.text1}}</div>
+              <div>{{initParams.slide12.text.text2}}</div>
+              <div>{{initParams.slide12.text.text3}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="text1">
+          <div class="letter" mc-for="key,item" mc-of="initParams.text1">
+            {{item}}
+          </div>
+        </div>
+        <div class="text2">
+          <div class="letter" mc-for="key,item" mc-of="initParams.text2">
+            {{item}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide11">
+    <div class="content">
+      <div class="source-block">
+        <div class="source-wrapper">
+          <div class="source">SOURCE: </div>
+          <div class="source-subtitle">{{initParams.slide11.source}}</div>
+        </div>
+      </div>
+      <div class="text-wrapper">
+        <div class="background-back"></div>
+        <div class="background"></div>
+        <div class="text"> {{initParams.slide11.text}} <span class="text-bold">{{initParams.slide4.boldtext}}</span></div>
+    </div>
+    </div>
+  </div>
+  <div class="slide10">
+    <div class="location-wrapper">
+      <div class="location">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 30 30" version="1.1">
+          <g id="surface1">
+          <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 15 1.875 C 10.664062 1.875 7.136719 5.3125 7.136719 9.648438 C 7.136719 10.609375 7.34375 11.660156 7.710938 12.601562 L 7.707031 12.601562 L 7.742188 12.671875 C 7.769531 12.738281 7.800781 12.800781 7.828125 12.867188 L 15 28.125 L 22.136719 12.941406 L 22.171875 12.875 C 22.203125 12.808594 22.238281 12.742188 22.265625 12.671875 L 22.289062 12.609375 C 22.671875 11.664062 22.863281 10.671875 22.863281 9.660156 C 22.863281 5.3125 19.335938 1.875 15 1.875 Z M 15 12.125 C 13.484375 12.125 12.25 10.890625 12.25 9.375 C 12.25 7.859375 13.484375 6.625 15 6.625 C 16.515625 6.625 17.75 7.859375 17.75 9.375 C 17.75 10.890625 16.515625 12.125 15 12.125 Z M 15 12.125 "/>
+          </g>
+          </svg>
+        <div class="city">{{initParams.slide10.location.city}} /</div>
+        <div class="country">{{initParams.slide10.location.country}}</div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="cube">
+        <div class="cube-face cube-face-front"></div>
+        <div class="cube-face cube-face-back"></div>
+        <div class="cube-face cube-face-right"></div>
+        <div class="cube-face cube-face-left"></div>
+        <div class="cube-face cube-face-top">
+          <div class="text">
+            <div class="text1">
+              <div class="letter" mc-for="key,item" mc-of="initParams.text1">
+                {{item}}
+              </div>
+            </div>
+            <div class="text2">
+              <div class="letter" mc-for="key,item" mc-of="initParams.text2">
+                {{item}}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cube-face cube-face-bottom"></div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="line"></div>
+      <div class="text-wrapper">
+        <div class="text">
+          <div>{{initParams.slide10.text1}}</div>
+          <div>{{initParams.slide10.text2}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide9">
+    <div class="title-wrapper">
+      <div class="line"></div>
+      <div class="title">
+        <div class="word" mc-for="key,item" mc-of="initParams.slide9.title">
+          {{item}}
+        </div>
+      </div>
+    </div>
+    <div class="flex-column">
+      <div class="source-block">
+        <div class="source-tag-wrapper">
+          <div class="source-tag">SOURCE:</div>
+        </div>
+        <div class="source-wrapper">
+          <div class="source">{{initParams.slide8.source}}</div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="text-wrapper">
+          <div class="background-back"></div>
+          <div class="background"></div>
+          <div class="text">
+            <div>{{initParams.slide9.text.text1}}</div>
+            <div>{{initParams.slide9.text.text2}}</div>
+            <div>{{initParams.slide9.text.text3}}</div>
+            <div>{{initParams.slide9.text.text4}}</div>
+            <div>{{initParams.slide9.text.text5}}</div>
+          </div>
+        </div>
+        <div class="person">
+          <div class="person-line"></div>
+          <div class="name-block">
+            <div class="name" mc-for="key,item" mc-of="initParams.slide9.person.name">
+              <div class="letter" mc-for="key,letter" mc-of="item">
+                {{letter}}
+              </div>
+            </div>
+          </div>
+          <div class="job">{{initParams.slide9.person.job}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide8">
+    <div class="source-block">
+      <div class="source-tag-wrapper">
+        <div class="source-tag">SOURCE:</div>
+      </div>
+      <div class="source-wrapper">
+        <div class="source">{{initParams.slide8.source}}</div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="title-wrapper">
+      <div class="title">{{initParams.slide8.title}}</div>
+    </div>
+    <div class="text-wrapper">
+      <div class="text">
+        <div>{{initParams.slide8.text.text1}}</div>
+        <div>{{initParams.slide8.text.text2}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide7">
+    <div class="content">
+      <div class="title-wrapper">
+        <div class="background"></div>
+        <div class="title">{{initParams.slide7.title}}</div>
+      </div>
+      <div class="text-wrapper">
+        <div class="background-back"></div>
+        <div class="text">{{initParams.slide7.text}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide6">
+    <div class="live-tag">LIVE</div>
+      <div class="content">
+        <div class="title-wrapper">
+          <div class="title">
+            <div class="word" mc-for="key,item" mc-of="initParams.slide6.title">
+              <div class="letter" mc-for="key,letter" mc-of="item">
+                {{letter}}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-wrapper">
+          <div class="text">{{initParams.slide6.text}}</div>
+        </div>
+      </div>
+  </div>
   <div class="slide5">
     <div class="location-wrapper">
       <div class="location">
@@ -129,15 +328,15 @@
                 {{item}}
               </div>
             </div>
-          <div class="text2">
-            <div class="letter" mc-for="key,item" mc-of="initParams.text2">
-              {{item}}
+            <div class="text2">
+              <div class="letter" mc-for="key,item" mc-of="initParams.text2">
+                {{item}}
+              </div>
             </div>
           </div>
         </div>
+        <div class="cube-face cube-face-bottom"></div>
       </div>
-      <div class="cube-face cube-face-bottom"></div>
     </div>
   </div>
-</div>
 </div>

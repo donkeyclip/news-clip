@@ -2,6 +2,7 @@ import { CSSEffect, loadPlugin } from "@donkeyclip/motorcortex";
 import MCVideo from "@kissmybutton/motorcortex-video";
 const VideoPlugin = loadPlugin(MCVideo);
 
+
 export const cubeRotate = (selector, duration, easing = "linear") =>
   new CSSEffect(
     {
@@ -147,7 +148,7 @@ export const cubeRotate = (selector, duration, easing = "linear") =>
       }
     );
   
-  export const widthMove = (width, selector, duration,delay = 0, easing = "linear") =>
+    export const widthMove = (width, selector, duration,delay = 0, easing = "linear") =>
     new CSSEffect(
       {
         animatedAttrs: {
@@ -161,7 +162,22 @@ export const cubeRotate = (selector, duration, easing = "linear") =>
         easing,
       }
     );
-  
+
+    export const centerTransform = ( selector, duration, easing = "linear") =>
+    new CSSEffect(
+      {
+        animatedAttrs: {
+          transform:{
+            translate:"-50% -50%"
+          }
+        },
+      },
+      {
+        selector,
+        duration,
+        easing,
+      }
+    );
 
   export const video = (source,selector) => new VideoPlugin.Clip(
     {

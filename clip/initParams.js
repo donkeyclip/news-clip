@@ -9,7 +9,8 @@ export const initParams = [
       basicColor:"black",
       secondaryColor: "#fac132",
       tertiaryColor:"#fa2020",
-      text1:"box",
+      whiteCubeEffectColor:"#bbc6c9",
+      text1:"Cube",
       text2:"news",
       slide1:{
         location:{
@@ -35,7 +36,7 @@ export const initParams = [
         text:["The","idea","of","redememption","is","always","good","news","even","if","it","means","sacrifice","or","some","difficult","times","."]
       },
       slide4:{
-        text:"the brains of humans contain a mechanism that is designed",
+        text:"the brains of humans contain a mechanism that is designed ",
         boldtext:"to give priority to bad news.",
         name:{
           firstname:"Alice",
@@ -50,7 +51,66 @@ export const initParams = [
           city:"Amsterdam",
           country:"Netherlands"
         },
-        personImg:"assets/person.jpeg"
+        personImg:"https://github.com/ElisavetAmpatzidou/news-clip/blob/main/demo/assets/person.jpeg?raw=true"
+      },
+      slide6:{
+        title:["the","expected","meeting","took","place"],
+        text:"If there is one way that I would sum up what the 2016 election was on cable news, it was world-class journalists interviewing morons."
+      },
+      slide7:{
+        title:"breaking news",
+        text:"fake news is cheap to produce genuine journalism is expensive nothing in fine print is ever good news.",
+      },
+      slide8:{
+        title:"news summary of the day",
+        text:{
+          text1:"My mentor is Lorem Ipsum, the greatest",
+          text2:"news anchor Ipsum Loren has had."
+        },
+        source:"TVNews Agency"
+      },
+      slide9:{
+        title:["BREAKING","NEWS"],
+        text:{
+          text1:"I BELIEVE IN ELVES AND",
+          text2:"GIANTS. I BELIEVE THAT FAIRY",
+          text3:"TALES ARE NOTHING MORE",
+          text4:"THAN NEWS REPORTS OF",
+          text5:"WHAT ONCE HAPPEND."
+        },
+        person:{
+          name:["Jenny", "Brown"],
+          job:"journalist"
+        }
+      },
+      slide10:{
+        text1:"The news used to be to report facts and allow you to make the decision.",
+        text2:"This country is a better place because Cube News has succeeded.",
+        location:{
+          city:"Paris",
+          country:"France"
+        },
+      },
+      slide11:{
+        text:"OUR DEMOCRACY DEPENDS ON A FREE AND INDEPENDENT PRESS. WHEN POLITICIANS CALL REPORTING THEY DON'T LIKE 'FAKE NEWS', THEY UNDERMINE TRUSTIN OUR CIVIC ORGANIZATION FOR THEIR OWN POLITICAL GAIN.",
+        source:"Lorem Ipsum Media"
+      },
+      slide12:{
+        title:["what","is","going","on","in","the","world","?"],
+        text:{
+          text1:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          text2:"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          text3:"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        location:{
+          city:"Berlin",
+          country:"Germany"
+        },
+        person:{
+          personImg:"assets/woman.jpeg",
+          name:"Emma Wilson",
+          job:"reporter"
+        }
       }
     },
   },
