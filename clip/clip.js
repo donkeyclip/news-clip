@@ -32,7 +32,7 @@ const video9 = video("assets/woman-in-red.mp4",".slide9");
 const video10 = video("assets/france-news.mp4",".slide10");
 const video11 = video("assets/france-news2.mp4",".slide11");
 const video12 = video("assets/people.mp4",".slide12");
-const video13 = video("assets/people.mp4",".slide13");
+
 
 clip.addIncident(cubeRotate(".intro .cube",1000),0)
 clip.addIncident(opacity1(".intro .letter",100,"@stagger(0, 600)"),700)

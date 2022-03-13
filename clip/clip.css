@@ -212,7 +212,7 @@
 
 .slide1 .line2{
   position: absolute;
-  height: 110%;
+  height: 100%;
   width: 5%;
   background: var(--backgroundColor);
 }
