@@ -1,10 +1,8 @@
-// export const initParamsValidationRules = {
-// };
-
 export const initParams = [
   {
     name: "Default",
     value: {
+      song:"assets/news-audio.mp3",
       backgroundColor: "white",
       basicColor:"black",
       secondaryColor: "#fac132",

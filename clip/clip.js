@@ -1,4 +1,4 @@
-import { HTMLClip } from "@donkeyclip/motorcortex";
+import { HTMLClip, AudioPlayback,AudioEffect} from "@donkeyclip/motorcortex";
 import html from "./clip.html";
 import css from "!!raw-loader!./clip.css";
 import { cubeRotate,opacity1, opacity, moveBottom, moveLeft, moveRight, moveTop, widthMove, heightMove,video ,playback} from "./incidents";
@@ -19,7 +19,40 @@ export const clip = new HTMLClip({
       src: `https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap`,
     },
   ],
+  audioSources: [
+    {
+      src: initParams[0].value.song,
+      id: "my-mp3",
+      classes: ["songs"],
+      base64: false,
+    },
+  ],
 });
+
+
+const songPlayback = new AudioPlayback({
+  selector: "~#my-mp3",
+  startFrom: 0,
+  duration: 86500,
+});
+
+clip.addIncident(songPlayback, 0);
+
+const effect = new AudioEffect(
+  {
+    animatedAttrs: {
+      gain: 0,
+    },
+  },
+  {
+    selector: "~#my-mp3",
+    duration: 1000,
+  }
+);
+
+clip.addIncident(effect, 85500);
+
+
 const video1 = video("assets/man-and-woman-talk.mp4",".slide1");
 const video2 = video("assets/world-news.mp4",".slide2");
 const video3 = video("assets/man-talk.mp4",".slide3");
