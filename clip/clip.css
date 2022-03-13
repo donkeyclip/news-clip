@@ -1014,10 +1014,10 @@
 
 .slide12 .text{
   position: relative;
-  top: 160px;
+  top: 130px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 52px;
 }
 
 .slide12 .box{
@@ -1038,15 +1038,42 @@
 
 .slide12 .person{
   position: absolute;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 10px;
   left: 5%;
-  top: 30%;
+  top: 20%;
 }
 
 .slide12 .img{
   width: 0%;
   height: 0%;
-  background: url({{initParams.slide12.personImg}});
+  background: url({{initParams.slide12.person.personImg}});
+  background-position: center;
+  background-size: cover;
+  padding: 5px;
+  border: 5px solid white;
+  opacity: 0;
 }
+
+.slide12 .name{
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  background-color: var(--backgroundColor);
+  color: var(--basicColor);
+  padding: 5px;
+  left: -100%;
+}
+
+.slide12 .job{
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--backgroundColor);
+  left: -100%;
+}
+

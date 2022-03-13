@@ -107,7 +107,7 @@ export const initParams = [
           country:"Germany"
         },
         person:{
-          personImg:"assets/woman.jpeg",
+          personImg:"https://github.com/ElisavetAmpatzidou/news-clip/blob/main/demo/assets/woman.jpeg?raw=true",
           name:"Emma Wilson",
           job:"reporter"
         }
