@@ -2,7 +2,7 @@ export const initParams = [
   {
     name: "Default",
     value: {
-      song:"https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/news-clip/man-and-woman-talk.mp4?raw=true",
+      song:"https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/news-clip/news-audio.mp3",
       backgroundColor: "white",
       basicColor:"black",
       secondaryColor: "#fac132",
@@ -11,7 +11,7 @@ export const initParams = [
       text1:"Cube",
       text2:"news",
       slide1:{
-        video:"assets/man-and-woman-talk.mp4",
+        video:"https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/news-clip/man-and-woman-talk.mp4?raw=true",
         location:{
           city: "NewYork",
           country: "USA"
