@@ -1,5 +1,6 @@
 import { CSSEffect, loadPlugin } from "@donkeyclip/motorcortex";
 import MCVideo from "@kissmybutton/motorcortex-video";
+import { initParams } from './initParams';
 const VideoPlugin = loadPlugin(MCVideo);
 
 

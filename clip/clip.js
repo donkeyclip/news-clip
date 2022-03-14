@@ -53,18 +53,18 @@ const effect = new AudioEffect(
 clip.addIncident(effect, 85500);
 
 
-const video1 = video("assets/man-and-woman-talk.mp4",".slide1");
-const video2 = video("assets/world-news.mp4",".slide2");
-const video3 = video("assets/man-talk.mp4",".slide3");
-const video4 = video("assets/woman-talk.mp4",".slide4");
-const video5 = video("assets/demonstration.mp4",".slide5");
-const video6 = video("assets/live.mp4",".slide6");
-const video7 = video("assets/breaking-news.mp4",".slide7");
-const video8 = video("assets/police.mp4",".slide8");
-const video9 = video("assets/woman-in-red.mp4",".slide9");
-const video10 = video("assets/france-news.mp4",".slide10");
-const video11 = video("assets/france-news2.mp4",".slide11");
-const video12 = video("assets/people.mp4",".slide12");
+const video1 = video("@initParams.slide1.video",".slide1");
+const video2 = video("@initParams.slide2.video",".slide2");
+const video3 = video("@initParams.slide3.video",".slide3");
+const video4 = video("@initParams.slide4.video",".slide4");
+const video5 = video("@initParams.slide5.video",".slide5");
+const video6 = video("@initParams.slide6.video",".slide6");
+const video7 = video("@initParams.slide7.video",".slide7");
+const video8 = video("@initParams.slide8.video",".slide8");
+const video9 = video("@initParams.slide9.video",".slide9");
+const video10 = video("@initParams.slide10.video",".slide10");
+const video11 = video("@initParams.slide11.video",".slide11");
+const video12 = video("@initParams.slide12.video",".slide12");
 
 
 clip.addIncident(cubeRotate(".intro .cube",1000),0)
