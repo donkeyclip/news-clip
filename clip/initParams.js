@@ -2,7 +2,7 @@ export const initParams = [
   {
     name: "Default",
     value: {
-      song: "https://donkeyclip.github.io/news-clip/news-audio.mp3",
+      song: "https://donkeyclip.github.io/news-clip/demo/assets/news-audio.mp3",
       backgroundColor: "white",
       basicColor: "black",
       secondaryColor: "#fac132",
@@ -12,7 +12,7 @@ export const initParams = [
       text2: "news",
       slide1: {
         video:
-          "https://donkeyclip.github.io/news-clip/man-and-woman-talk.mp4",
+          "https://donkeyclip.github.io/news-clip/demo/assets/man-and-woman-talk.mp4",
         location: {
           city: "NewYork",
           country: "USA",
@@ -53,7 +53,7 @@ export const initParams = [
       },
       slide2: {
         video:
-          "https://donkeyclip.github.io/news-clip/world-news.mp4",
+          "https://donkeyclip.github.io/news-clip/demo/assets/world-news.mp4",
         location: {
           city: "Moscow",
           country: "RUSSIA",
@@ -67,7 +67,7 @@ export const initParams = [
       },
       slide3: {
         video:
-          "https://donkeyclip.github.io/news-clip/man-talk.mp4",
+          "https://donkeyclip.github.io/news-clip/demo/assets/man-talk.mp4",
         text: [
           "The",
           "idea",
@@ -91,7 +91,7 @@ export const initParams = [
       },
       slide4: {
         video:
-          "https://donkeyclip.github.io/news-clip/woman-talk.mp4",
+          "https://donkeyclip.github.io/news-clip/demo/assets/woman-talk.mp4",
         text: "the brains of humans contain a mechanism that is designed ",
         boldtext: "to give priority to bad news.",
         name: {
@@ -102,7 +102,7 @@ export const initParams = [
       },
       slide5: {
         video:
-          "https://donkeyclip.github.io/news-clip/demonstration.mp4",
+          "https://donkeyclip.github.io/news-clip/demo/assets/demonstration.mp4",
         title: "main news of the day",
         text: "bad news travels at the speed of light.good news travels like molasses.",
         location: {
@@ -110,23 +110,23 @@ export const initParams = [
           country: "Netherlands",
         },
         personImg:
-          "https://github.com/donkeyclip/news-clip/blob/main/demo/assets/person.jpeg",
+          "https://donkeyclip.github.io/news-clip/demo/assets/person.jpeg",
       },
       slide6: {
         video:
-          "https://donkeyclip.github.io/news-clip/live.mp4",
+          "https://donkeyclip.github.io/news-clip/demo/assets/live.mp4",
         title: ["the", "expected", "meeting", "took", "place"],
         text: "If there is one way that I would sum up what the 2016 election was on cable news, it was world-class journalists interviewing morons.",
       },
       slide7: {
         video:
-          "https://donkeyclip.github.io/news-clip/breaking-news.mp4",
+          "https://donkeyclip.github.io/news-clip/demo/assets/breaking-news.mp4",
         title: "breaking news",
         text: "fake news is cheap to produce genuine journalism is expensive nothing in fine print is ever good news.",
       },
       slide8: {
         video:
-          "https://donkeyclip.github.io/news-clip/police.mp4",
+          "https://donkeyclip.github.io/news-clip/demo/assets/police.mp4",
         title: "news summary of the day",
         text: {
           text1: "My mentor is Lorem Ipsum, the greatest",
@@ -136,7 +136,7 @@ export const initParams = [
       },
       slide9: {
         video:
-          "https://donkeyclip.github.io/news-clip/woman-in-red.mp4",
+          "https://donkeyclip.github.io/news-clip/demo/assets/woman-in-red.mp4",
         title: ["BREAKING", "NEWS"],
         text: {
           text1: "I BELIEVE IN ELVES AND",
@@ -152,7 +152,7 @@ export const initParams = [
       },
       slide10: {
         video:
-          "https://donkeyclip.github.io/news-clip/france-news.mp4",
+          "https://donkeyclip.github.io/news-clip/demo/assets/france-news.mp4",
         text1:
           "The news used to be to report facts and allow you to make the decision.",
         text2:
@@ -164,13 +164,13 @@ export const initParams = [
       },
       slide11: {
         video:
-          "https://donkeyclip.github.io/news-clip/france-news2.mp4",
+          "https://donkeyclip.github.io/news-clip/demo/assets/france-news2.mp4",
         text: "OUR DEMOCRACY DEPENDS ON A FREE AND INDEPENDENT PRESS. WHEN POLITICIANS CALL REPORTING THEY DON'T LIKE 'FAKE NEWS', THEY UNDERMINE TRUSTIN OUR CIVIC ORGANIZATION FOR THEIR OWN POLITICAL GAIN.",
         source: "Lorem Ipsum Media",
       },
       slide12: {
         video:
-          "https://donkeyclip.github.io/news-clip/people.mp4",
+          "https://donkeyclip.github.io/news-clip/demo/assets/people.mp4",
         title: ["what", "is", "going", "on", "in", "the", "world", "?"],
         text: {
           text1:
@@ -186,7 +186,7 @@ export const initParams = [
         },
         person: {
           personImg:
-            "https://github.com/donkeyclip/news-clip/blob/main/demo/assets/woman.jpeg",
+            "https://donkeyclip.github.io/news-clip/demo/assets/woman.jpeg",
           name: "Emma Wilson",
           job: "reporter",
         },
