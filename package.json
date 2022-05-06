@@ -65,7 +65,6 @@
     "webpack-dev-server": "4.7.4"
   },
   "dependencies": {
-    "@donkeyclip/motorcortex-animetitles": "^1.2.1",
-    "@kissmybutton/motorcortex-video": "^2.1.0"
+    "@kissmybutton/motorcortex-video": "^2.2.1"
   }
 }
