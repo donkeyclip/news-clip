@@ -51,6 +51,12 @@ export default {
         label: "Slide 1",
         type: "object",
         optional: true,
+        props:{
+            video:"string",
+            location:"object",
+            source:"string",
+            text:"array"
+        },
         default: {
             video:
               "https://donkeyclip.github.io/news-clip/demo/assets/man-and-woman-talk.mp4",
@@ -97,6 +103,11 @@ export default {
         label: "Slide 2",
         type: "object",
         optional: true,
+        props:{
+            video:"string",
+            location:"object",
+            text:"object"
+        },
         default:{
             video:
               "https://donkeyclip.github.io/news-clip/demo/assets/world-news.mp4",
@@ -116,6 +127,10 @@ export default {
         label: "Slide 3",
         type: "object",
         optional: true,
+        props:{
+            video:"string",
+            text:"array",
+        },
         default:{
             video: "https://donkeyclip.github.io/news-clip/demo/assets/man-talk.mp4",
             text: [
@@ -144,6 +159,13 @@ export default {
         label: "Slide 4",
         type: "object",
         optional: true,
+        props:{
+            video:"string",
+            text:"string",
+            boldtext:"string",
+            name:"object",
+            subtitle:"string",
+        },
         default:{
             video: "https://donkeyclip.github.io/news-clip/demo/assets/woman-talk.mp4",
             text: "the brains of humans contain a mechanism that is designed ",
@@ -159,6 +181,13 @@ export default {
         label: "Slide 5",
         type: "object",
         optional: true,
+        props:{
+            video:"string",
+            title:"string",
+            text:"string",
+            location:"object",
+            personImg:"string"
+        },
         default:{
             video: "https://donkeyclip.github.io/news-clip/demo/assets/demonstration.mp4",
             title: "main news of the day",
@@ -174,6 +203,11 @@ export default {
         label: "Slide 6",
         type: "object",
         optional: true,
+        props:{
+            video:"string",
+            title:"array",
+            text:"string"
+        },
         default:{
             video: "https://donkeyclip.github.io/news-clip/demo/assets/live.mp4",
             title: ["the", "expected", "meeting", "took", "place"],
@@ -184,6 +218,11 @@ export default {
         label: "Slide 7",
         type: "object",
         optional: true,
+        props:{
+            video:"string",
+            title:"string",
+            text:"string",
+        },
         default:{
             video: "https://donkeyclip.github.io/news-clip/demo/assets/breaking-news.mp4",
             title: "breaking news",
@@ -194,6 +233,12 @@ export default {
         label: "Slide 8",
         type: "object",
         optional: true,
+        props:{
+            video:"string",
+            title:"string",
+            text:"object",
+            source:"string",
+        },
         default:{
             video: "https://donkeyclip.github.io/news-clip/demo/assets/police.mp4",
             title: "news summary of the day",
@@ -208,6 +253,12 @@ export default {
         label: "Slide 9",
         type: "object",
         optional: true,
+        props:{
+            video:"string",
+            title:"array",
+            text:"object",
+            person:"object",
+        },
         default:{
           video: "https://donkeyclip.github.io/news-clip/demo/assets/woman-in-red.mp4",
           title: ["BREAKING", "NEWS"],
@@ -228,6 +279,12 @@ export default {
         label: "Slide 10",
         type: "object",
         optional: true,
+        props:{
+            video:"string",
+            text1:"string",
+            text2:"string",
+            location:"object",
+        },
         default:{
             video: "https://donkeyclip.github.io/news-clip/demo/assets/france-news.mp4",
             text1: "The news used to be to report facts and allow you to make the decision.",
@@ -242,6 +299,11 @@ export default {
         label: "Slide 11",
         type: "object",
         optional: true,
+        props:{
+            video:"string",
+            text:"string",
+            source:"string",
+        },
         deafult:{
           video: "https://donkeyclip.github.io/news-clip/demo/assets/france-news2.mp4",
           text: "OUR DEMOCRACY DEPENDS ON A FREE AND INDEPENDENT PRESS. WHEN POLITICIANS CALL REPORTING THEY DON'T LIKE 'FAKE NEWS', THEY UNDERMINE TRUSTIN OUR CIVIC ORGANIZATION FOR THEIR OWN POLITICAL GAIN.",
@@ -252,6 +314,13 @@ export default {
         label: "Slide 12",
         type: "object",
         optional: true,
+        props:{
+            video:"string",
+            title:"array",
+            text:"object",
+            location:"object",
+            person:"object"
+        },
         default:{
             video: "https://donkeyclip.github.io/news-clip/demo/assets/people.mp4",
             title: ["what", "is", "going", "on", "in", "the", "world", "?"],
