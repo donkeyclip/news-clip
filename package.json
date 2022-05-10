@@ -65,6 +65,6 @@
     "webpack-dev-server": "4.7.4"
   },
   "dependencies": {
-    "@kissmybutton/motorcortex-video": "^2.2.1"
+    "@kissmybutton/motorcortex-video": "^2.2.2"
   }
 }
