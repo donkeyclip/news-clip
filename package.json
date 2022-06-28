@@ -34,7 +34,7 @@
     "@babel/plugin-syntax-jsx": "7.16.7",
     "@babel/plugin-transform-react-jsx": "7.17.3",
     "@babel/preset-env": "7.16.11",
-    "@donkeyclip/motorcortex": "^9.1.1",
+    "@donkeyclip/motorcortex": "9.4.1",
     "@donkeyclip/motorcortex-player": "2.9.5",
     "@donkeyclip/video-renderer": "1.4.2",
     "@rollup/plugin-babel": "5.3.0",
@@ -65,6 +65,6 @@
     "webpack-dev-server": "4.7.4"
   },
   "dependencies": {
-    "@kissmybutton/motorcortex-video": "^2.2.2"
+    "@kissmybutton/motorcortex-video": "2.2.2"
   }
 }
