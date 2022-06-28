@@ -3,13 +3,17 @@ export const initParams = [
     name: "Default",
     value: {
       song: "https://donkeyclip.github.io/news-clip/demo/assets/news-audio.mp3",
-      backgroundColor: "white",
-      basicColor: "black",
-      secondaryColor: "#fac132",
-      tertiaryColor: "#fa2020",
-      whiteCubeEffectColor: "#bbc6c9",
-      text1: "Cube",
-      text2: "news",
+      styles:{
+        backgroundColor: "white",
+        basicColor: "black",
+        secondaryColor: "#fac132",
+        tertiaryColor: "#fa2020",
+        whiteCubeEffectColor: "#bbc6c9",
+      },
+      title:{
+        text1: "Cube",
+        text2: "news",
+      },
       slide1: {
         video:
           "https://donkeyclip.github.io/news-clip/demo/assets/man-and-woman-talk.mp4",

@@ -1,9 +1,9 @@
 * {
-  --backgroundColor: {{ initParams.backgroundColor }};
-  --basicColor: {{ initParams.basicColor}};
-  --secondaryColor:{{ initParams.secondaryColor}};
-  --tertiaryColor:{{initParams.tertiaryColor}};
-  --whiteCubeEffectColor:{{initParams.whiteCubeEffectColor}}
+  --backgroundColor: {{ initParams.styles.backgroundColor }};
+  --basicColor: {{ initParams.styles.basicColor}};
+  --secondaryColor:{{ initParams.styles.secondaryColor}};
+  --tertiaryColor:{{initParams.styles.tertiaryColor}};
+  --whiteCubeEffectColor:{{initParams.styles.whiteCubeEffectColor}}
 }
 
 .root {
