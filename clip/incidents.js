@@ -55,13 +55,15 @@ export const moveTop = (
   selector,
   duration,
   delay = 0,
-  easing = "linear"
+  easing = "linear",
+  initialValues = undefined
 ) =>
   new CSSEffect(
     {
       animatedAttrs: {
         top,
       },
+      ...(initialValues && { initialValues: { top: initialValues } }),
     },
     {
       selector,
@@ -76,13 +78,15 @@ export const moveBottom = (
   selector,
   duration,
   delay = 0,
-  easing = "linear"
+  easing = "linear",
+  initialValues = undefined
 ) =>
   new CSSEffect(
     {
       animatedAttrs: {
         bottom,
       },
+      ...(initialValues && { initialValues: { bottom: initialValues } }),
     },
     {
       selector,
@@ -97,13 +101,15 @@ export const moveLeft = (
   selector,
   duration,
   delay = 0,
-  easing = "linear"
+  easing = "linear",
+  initialValues = undefined
 ) =>
   new CSSEffect(
     {
       animatedAttrs: {
         left,
       },
+      ...(initialValues && { initialValues: { left: initialValues } }),
     },
     {
       selector,
@@ -118,13 +124,15 @@ export const moveRight = (
   selector,
   duration,
   delay = 0,
-  easing = "linear"
+  easing = "linear",
+  initialValues = undefined
 ) =>
   new CSSEffect(
     {
       animatedAttrs: {
         right,
       },
+      ...(initialValues && { initialValues: { right: initialValues } }),
     },
     {
       selector,

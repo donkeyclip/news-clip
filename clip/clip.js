@@ -1,4 +1,9 @@
-import { HTMLClip, AudioPlayback, AudioEffect } from "@donkeyclip/motorcortex";
+import {
+  HTMLClip,
+  AudioPlayback,
+  AudioEffect,
+  setCSSCore,
+} from "@donkeyclip/motorcortex";
 import html from "./clip.html";
 import css from "!!raw-loader!./clip.css";
 import {
@@ -16,6 +21,8 @@ import {
 } from "./incidents";
 import { initParams } from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
+import AnimePluginDefinition from "@donkeyclip/motorcortex-anime";
+// setCSSCore(AnimePluginDefinition.CSSEffect);
 
 export const clip = new HTMLClip({
   html,
@@ -109,8 +116,14 @@ clip.addIncident(
   widthMove("100%", ".slide2 .location-wrapper .background", 300),
   12000
 );
-clip.addIncident(moveBottom("-20%", ".slide2 .text-wrapper", 300), 15200);
-clip.addIncident(moveBottom("-10%", ".slide2 .line1", 300), 15200);
+clip.addIncident(
+  moveBottom("-20%", ".slide2 .text-wrapper", 300, 0, "linear", "10%"),
+  15200
+);
+clip.addIncident(
+  moveBottom("-10%", ".slide2 .line1", 300, 0, "linear", "20%"),
+  15200
+);
 clip.addIncident(opacity(".slide2", 1), 16000);
 video3.addIncident(playback(5000), 0);
 clip.addIncident(video3, 16000);
